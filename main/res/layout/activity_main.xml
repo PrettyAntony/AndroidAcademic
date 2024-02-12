@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/screenTitle"
+        style="@style/TitleStyle"
+        android:background="@drawable/border_background"
+        android:text="@string/page_title"
+        app:layout_constraintBottom_toTopOf="@id/emailTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailTitle"
+        style="@style/EditTextStyle"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/border_background"
+        android:hint="@string/email_title"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@id/unameTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenTitle" />
+
+    <EditText
+        android:id="@+id/unameTitle"
+        style="@style/EditTextStyle"
+        android:autofillHints="username"
+        android:background="@drawable/border_background"
+        android:hint="@string/uname_title"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/firstNameTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTitle" />
+
+    <EditText
+        android:id="@+id/firstNameTitle"
+        style="@style/EditTextStyle"
+        android:autofillHints="username"
+        android:background="@drawable/border_background"
+        android:hint="@string/first_name_title"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/lastNameTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unameTitle" />
+
+    <EditText
+        android:id="@+id/lastNameTitle"
+        style="@style/EditTextStyle"
+        android:autofillHints="username"
+        android:background="@drawable/border_background"
+        android:hint="@string/last_name_title"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/pwdTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTitle" />
+
+    <EditText
+        android:id="@+id/pwdTitle"
+        style="@style/EditTextStyle"
+        android:autofillHints="password"
+        android:background="@drawable/border_background"
+        android:hint="@string/pwd_title"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/cPwdTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTitle" />
+
+    <EditText
+        android:id="@+id/cPwdTitle"
+        style="@style/EditTextStyle"
+        android:autofillHints="password"
+        android:background="@drawable/border_background"
+        android:hint="@string/c_pwd_title"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/registerImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwdTitle" />
+
+    <ImageView
+        android:id="@+id/registerImage"
+        style="@style/ImageViewStyle"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cPwdTitle"
+        app:srcCompat="@drawable/ic_register" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        style="@style/ButtonStyle"
+        android:text="@string/page_title"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerImage"
+        tools:ignore="AllCaps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

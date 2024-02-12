@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PrettyAntonyTask1</string>
+    <string name="page_title"><b>Register</b></string>
+    <string name="email_title">Email Address</string>
+    <string name="uname_title">Username</string>
+    <string name="first_name_title">First Name</string>
+    <string name="last_name_title">Last Name</string>
+    <string name="pwd_title">Password</string>
+    <string name="c_pwd_title">Confirm Password</string>
+    <string name="login_btn_title">Login</string>
+</resources>
